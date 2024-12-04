@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 //import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { ConnectButton } from "@/components/ui/CustomConnectButton";
+//import { ConnectButton } from "@/components/ui/CustomConnectButton";
+import { BlackConnectWalletButton } from "@/components/ui/BlackConnectWalletButton";
 import { useAccount } from 'wagmi';
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -158,7 +159,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <span className="text-sm">
             {isConnected ? 'Connected' : 'Not Connected'}
           </span>
-          <ConnectButton />
+          <BlackConnectWalletButton />
         </div>
       </div>
       {/* Animated Gradient Border */}

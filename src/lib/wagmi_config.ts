@@ -1,12 +1,20 @@
-import { http, createConfig } from "wagmi";
-import { polygon, sepolia, polygonAmoy } from "wagmi/chains";
+// src/lib/wagmi_config.ts
+import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import {
+  bscTestnet,
+  polygon,
+  polygonAmoy,
+} from 'wagmi/chains';
 
-export const config = createConfig({
-  chains: [polygon, sepolia, polygonAmoy],
-  transports: {
-    [polygon.id]: http(),
-    [sepolia.id]: http(),
-    [polygonAmoy.id]: http(),
-  },
+const enableTestnets = true;
+
+export const config = getDefaultConfig({
+  appName: 'boilerpplate',
+  projectId: '6b0e7594e3cfc2d55e17b6509e809444',
+  chains: [
+    polygon,
+    /*polygonAmoy,*/
+    ...(enableTestnets ? [polygonAmoy, bscTestnet] : []),
+  ],
   ssr: true,
 });
