@@ -1,11 +1,11 @@
 {
-  "name": "frontend",
+  "name": "boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "echo 'Build by panoptisDev' && next dev",
+    "build": "echo 'Build by panoptisDev' && next build",
+    "start": "echo 'Build by panoptisDev' && next start",
     "lint": "next lint",
     "generate-abi": "wagmi generate"
   },
