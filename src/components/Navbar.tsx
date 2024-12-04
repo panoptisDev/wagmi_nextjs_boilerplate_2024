@@ -159,7 +159,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <span className="text-sm">
             {isConnected ? 'Connected' : 'Not Connected'}
           </span>
-          <BlackConnectWalletButton />
+          <BlackConnectWalletButton/>
         </div>
       </div>
       {/* Animated Gradient Border */}

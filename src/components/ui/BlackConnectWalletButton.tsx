@@ -141,7 +141,7 @@ export function BlackConnectWalletButton({ height = 66, width = 200 }: BlackConn
                       if (!connected) {
                         return (
                           <span className="text-xl play-btn px-2 cursor-pointer animate-text hover:animate-text-hover">
-                            Sign in
+                            Connect Wallet
                           </span>
                         );
                       }
